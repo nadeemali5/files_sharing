@@ -1,3 +1,5 @@
+# Using the GitHub Actions Workspace (for the same job)
+
 name: Example Pipeline
 
 on: [push]
