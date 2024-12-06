@@ -1,0 +1,19 @@
+name: Example Pipeline
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Generate file
+        run: |
+          echo "Hello, world!" > myfile.txt
+
+      - name: Use generated file
+        run: |
+          type myfile.txt
